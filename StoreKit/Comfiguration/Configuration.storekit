@@ -1,0 +1,83 @@
+{
+  "identifier" : "48D6D3E6",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "CE80397D",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "",
+          "displayName" : "salad",
+          "locale" : "ar"
+        },
+        {
+          "description" : "",
+          "displayName" : "salad",
+          "locale" : "zh_TW"
+        }
+      ],
+      "productID" : "com.appcoda.storekitlocaldemo.salad",
+      "referenceName" : "salad",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.49",
+      "familyShareable" : false,
+      "internalID" : "E1123041",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "",
+          "displayName" : "spaghetti",
+          "locale" : "ar"
+        }
+      ],
+      "productID" : "com.appcoda.storekitlocaldemo.spaghetti",
+      "referenceName" : "spaghetti",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "49A618A4",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "123",
+          "displayName" : "cake",
+          "locale" : "ar"
+        }
+      ],
+      "productID" : "com.appcoda.storekitlocaldemo.cake",
+      "referenceName" : "cake",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

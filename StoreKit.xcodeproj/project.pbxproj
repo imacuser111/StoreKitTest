@@ -15,6 +15,8 @@
 		CECDD82D26CB921B009AA718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDD82B26CB921B009AA718 /* LaunchScreen.storyboard */; };
 		CECDD83826CB921B009AA718 /* StoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDD83726CB921B009AA718 /* StoreKitTests.swift */; };
 		CECDD84326CB921B009AA718 /* StoreKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDD84226CB921B009AA718 /* StoreKitUITests.swift */; };
+		CECDD85726CB9663009AA718 /* IAP_ProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = CECDD85526CB9663009AA718 /* IAP_ProductIDs.plist */; };
+		CECDD85826CB9663009AA718 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDD85626CB9663009AA718 /* IAPManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		CECDD83E26CB921B009AA718 /* StoreKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECDD84226CB921B009AA718 /* StoreKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitUITests.swift; sourceTree = "<group>"; };
 		CECDD84426CB921B009AA718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECDD85126CB9410009AA718 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		CECDD85526CB9663009AA718 /* IAP_ProductIDs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IAP_ProductIDs.plist; sourceTree = "<group>"; };
+		CECDD85626CB9663009AA718 /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,8 @@
 				CECDD82626CB921B009AA718 /* Assets.xcassets */,
 				CECDD82B26CB921B009AA718 /* LaunchScreen.storyboard */,
 				CECDD82E26CB921B009AA718 /* Info.plist */,
+				CECDD85426CB964D009AA718 /* IAP Managers */,
+				CECDD85026CB93E0009AA718 /* Comfiguration */,
 				CECDD82826CB921B009AA718 /* Preview Content */,
 			);
 			path = StoreKit;
@@ -134,6 +141,23 @@
 				CECDD84426CB921B009AA718 /* Info.plist */,
 			);
 			path = StoreKitUITests;
+			sourceTree = "<group>";
+		};
+		CECDD85026CB93E0009AA718 /* Comfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				CECDD85126CB9410009AA718 /* Configuration.storekit */,
+			);
+			path = Comfiguration;
+			sourceTree = "<group>";
+		};
+		CECDD85426CB964D009AA718 /* IAP Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CECDD85626CB9663009AA718 /* IAPManager.swift */,
+				CECDD85526CB9663009AA718 /* IAP_ProductIDs.plist */,
+			);
+			path = "IAP Managers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECDD85726CB9663009AA718 /* IAP_ProductIDs.plist in Resources */,
 				CECDD82D26CB921B009AA718 /* LaunchScreen.storyboard in Resources */,
 				CECDD82A26CB921B009AA718 /* Preview Assets.xcassets in Resources */,
 				CECDD82726CB921B009AA718 /* Assets.xcassets in Resources */,
@@ -266,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECDD85826CB9663009AA718 /* IAPManager.swift in Sources */,
 				CECDD82126CB921A009AA718 /* AppDelegate.swift in Sources */,
 				CECDD82326CB921A009AA718 /* SceneDelegate.swift in Sources */,
 				CECDD82526CB921A009AA718 /* ContentView.swift in Sources */,
@@ -438,13 +464,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StoreKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 436M5U47A4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StoreKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.StoreKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StoreKitApp;
+				PRODUCT_MODULE_NAME = StoreKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,13 +486,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StoreKit/Preview Content\"";
+				DEVELOPMENT_TEAM = 436M5U47A4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = StoreKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.StoreKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.StoreKitApp;
+				PRODUCT_MODULE_NAME = StoreKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
