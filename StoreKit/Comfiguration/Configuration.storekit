@@ -5,7 +5,7 @@
   ],
   "products" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "0.59",
       "familyShareable" : false,
       "internalID" : "CE80397D",
       "localizations" : [
@@ -15,14 +15,9 @@
           "locale" : "en_US"
         },
         {
-          "description" : "",
+          "description" : "123456",
           "displayName" : "salad",
           "locale" : "ar"
-        },
-        {
-          "description" : "",
-          "displayName" : "salad",
-          "locale" : "zh_TW"
         }
       ],
       "productID" : "com.appcoda.storekitlocaldemo.salad",
@@ -40,7 +35,7 @@
           "locale" : "en_US"
         },
         {
-          "description" : "",
+          "description" : "222222",
           "displayName" : "spaghetti",
           "locale" : "ar"
         }
@@ -71,7 +66,7 @@
     }
   ],
   "settings" : {
-
+    "_locale" : "ar"
   },
   "subscriptionGroups" : [
 

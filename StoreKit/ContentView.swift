@@ -26,7 +26,7 @@ struct ContentView: View {
 //            }
             
             ForEach(IAPManager.shared.products, id: \.self) { item in
-                Text(item.localizedTitle)
+                Text("\(item.localizedTitle)   $\(item.price) \n \(item.localizedDescription) ")
                     .onTapGesture {
                         IAPManager.shared.buy(product: item)
                     }
