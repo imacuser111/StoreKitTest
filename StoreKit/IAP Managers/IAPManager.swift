@@ -29,8 +29,6 @@ class IAPManager: NSObject, ObservableObject {
     //正式環境驗證
     let AppStore = "https://buy.itunes.apple.com/verifyReceipt"
     
-    private var productIdentifier = ""
-    
     override init() {
         super.init()
         _ = getProductIDs()
@@ -81,7 +79,6 @@ class IAPManager: NSObject, ObservableObject {
     func buy(product: SKProduct) {
         // 判斷是否允許購買(有些用戶會把IAP功能關閉)
         if SKPaymentQueue.canMakePayments() {
-            productIdentifier = product.productIdentifier
             
             let payment = SKPayment(product: product)
             //                payment.quantity = 1 // 購買數量(預設1)
